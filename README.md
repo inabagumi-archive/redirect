@@ -1,0 +1,5 @@
+# Redirect
+
+## License
+
+[MIT](LICENSE)

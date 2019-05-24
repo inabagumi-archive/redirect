@@ -1,0 +1,19 @@
+{
+  "alias": [
+    "www.haneru.dev",
+    "www.neru.camera"
+  ],
+  "builds": [
+    {
+      "src": "**/*.go",
+      "use": "@now/go"
+    }
+  ],
+  "routes": [
+    {
+      "dest": "index.go",
+      "src": "/.*"
+    }
+  ],
+  "version": 2
+}
