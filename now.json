@@ -10,6 +10,9 @@
       "use": "@now/go"
     }
   ],
+  "github": {
+    "silent": true
+  },
   "routes": [
     {
       "dest": "index.go",
