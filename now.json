@@ -7,6 +7,10 @@
   ],
   "builds": [
     {
+      "src": "static/**/*.js",
+      "use": "@now/static"
+    },
+    {
       "src": "**/*.go",
       "use": "@now/go"
     }
@@ -15,6 +19,10 @@
     "silent": true
   },
   "routes": [
+    {
+      "dest": "static/service-worker.js",
+      "src": "/(?:sw|service-worker)\\.js"
+    },
     {
       "dest": "index.go",
       "src": "/.*"
